@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Badeen+Display&family=Bebas+Neue&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Libre+Caslon+Display&family=Orbitron:wght@400..900&family=Pacifico&family=Pangolin&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU+Guides&family=Playwrite+HU:wght@100..400&family=Pochaevsk&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+h1{
+    font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.hero {
+    background: url(https://via.placeholder.com/1200x400) no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    font-size: 20px;
+    background-image: url(https://www.villageinn.com/FamousDaves/media/Graphics/Home/download-app.jpg);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    
+}
+
+.btn {
+    background: #ff5733;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+button{
+    background: #ff5733;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu {
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.menu-items {
+    display: flex;
+  
+    flex-wrap: wrap;
+}
+
+.item {
+    background: #e0e0e0;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    width: 27%;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #cac4c4;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+</style>
+<body>
+    <header>
+        <h1>The Wave</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Delicious Bites</h2>
+        <p>Experience the best food in town!</p>
+        <a href="#" class="btn">Order Now</a>
+    </section>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="https://thumbs.dreamstime.com/z/popular-pakistan-food-mutton-biryani-traditional-mixed-rice-dish-originated-mughal-empire-india-340755628.jpg" alt="Burger">
+                <h3>Hyderabadi DUM ka chicken Biriyani</h3>
+                <p>Spicy  chicken biriyani</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/06/14154304/Rajasthani-thali.png" alt="Pizza">
+                <h3>Thali</h3>
+                <p>Classic Thali Veg and Non veg.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Classic Italian pizza with your favorite toppings.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="https://www.vincenzosplate.com/wp-content/uploads/2021/08/610x350-Photo-4_862-How-to-Make-CHICKEN-PASTA-Like-an-Italian-V1.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Creamy pasta with a rich tomato sauce.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="https://www.getteaspoon.com/source/Restaurant%20Reviews/Happy%20Land/All%20(12).jpg?1503166744155" alt="Burger">
+                <h3>Salad</h3>
+                <p>Chicken and veg salads</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBlshBIZuYLCdP6Y1hMuX5tqdbXcvpYa4-Ag&s" alt="Pizza">
+                <h3>Grill Chicken</h3>
+                <p>Special Grilled chicken.</p>
+                <button>Order Now</button>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>
